@@ -4,7 +4,7 @@ CHI_PATH:=./vendor/github.com/go-chi/chi
 
 go:
 	curl https://dl.google.com/go/go1.8.7.src.tar.gz --output go1.8.7.src.tar.gz
-	tar -xjf go1.8.7.src.tar.gz
+	tar -xf go1.8.7.src.tar.gz
 
 go/bin/go: go
 	cd ./go/src && GOROOT_BOOTSTRAP=$(GOROOT) ./all.bash
